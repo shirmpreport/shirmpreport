@@ -1,12 +1,12 @@
 var hasInit = false;
 var firebaseConfig = {
-    apiKey: "AIzaSyCHO5bNhQN7gMEC9EjCKO11vcqrFX5jE_I",
-    authDomain: "adam-brodin-frontend-project.firebaseapp.com",
-    projectId: "adam-brodin-frontend-project",
-    storageBucket: "adam-brodin-frontend-project.appspot.com",
-    messagingSenderId: "27498153894",
-    appId: "1:27498153894:web:af31ae0ac454cab842f167",
-    measurementId: "G-ESH7QB5SK1"
+    apiKey: "AIzaSyDIpe6NOd5Y8WeuKLAdBJIxtfy-GwTHdME",
+    authDomain: "shrimpreport-12bf9.firebaseapp.com",
+    projectId: "shrimpreport-12bf9",
+    storageBucket: "shrimpreport-12bf9.appspot.com",
+    messagingSenderId: "789022728675",
+    appId: "1:789022728675:web:027e384a1782406c65c0d6",
+    measurementId: "G-7GLG8K91X3"
 };
 if (!hasInit) {
     firebase.initializeApp(firebaseConfig);
