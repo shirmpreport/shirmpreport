@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+</head>
+
+<div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="account.html">My Account</a>
+</div>
+
+<title>My Account</title>
+
+<body>
+    <!-- Logged out container-->
+    <div id="firebaseui-auth-container">
+        <h1 style="text-align: center; margin: 36px">Please login to continue</h1>
+    </div>
+
+    <!-- Logged in container-->
+    <div id="main_container" class="background" style="display:none">
+        <h1 id="welcome-user-text" style="text-align: center;">Welcome</h1>
+        <h2 style="font-weight: normal;">Here's a space picture, just for <b>you.</b></h2>
+        <p id="nasa-image-explanation">A space
+            image from NASA.
+        </p>
+        <button onclick="mainApp.logout()" id="signoutbtn">Sign out</button>
+    </div>
+
+    <script src=" js/firebase.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nasa.js"></script>
+</body>
+
+</html>
